@@ -81,7 +81,7 @@ into this user account:</p>
 <div class="section" id="create-user">
 <h2>Create user<a class="headerlink" href="#create-user" title="Permalink to this headline">¶</a></h2>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-YmFzaA==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-YmFzaA==" name="YmFzaA==" role="tab" tabindex="0">bash</button></div><div aria-labelledby="tab-0-YmFzaA==" class="sphinx-tabs-panel group-tab" id="panel-0-YmFzaA==" name="YmFzaA==" role="tabpanel" tabindex="0"><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ sudo -H useradd --shell /bin/bash --system <span class="se">\</span>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-YmFzaA==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-YmFzaA==" name="YmFzaA==" role="tab" tabindex="0">bash</button></div><div aria-labelledby="tab-0-YmFzaA==" class="sphinx-tabs-panel group-tab" id="panel-0-YmFzaA==" name="YmFzaA==" role="tabpanel" tabindex="0"><div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>$ sudo -H useradd --shell /bin/bash --system <span class="se">\</span>
     --home-dir <span class="s2">&quot;/usr/local/morty&quot;</span> <span class="se">\</span>
     --comment <span class="s2">&quot;Privacy-respecting metasearch engine&quot;</span> morty
 
@@ -94,7 +94,7 @@ $ sudo -H chown -R <span class="s2">&quot;morty:morty&quot;</span> <span class="
 <div class="section" id="install-go">
 <h2>Install go<a class="headerlink" href="#install-go" title="Permalink to this headline">¶</a></h2>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-1-YmFzaA==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-YmFzaA==" name="YmFzaA==" role="tab" tabindex="0">bash</button></div><div aria-labelledby="tab-1-YmFzaA==" class="sphinx-tabs-panel group-tab" id="panel-1-YmFzaA==" name="YmFzaA==" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cat &gt; <span class="s2">&quot;/usr/local/morty/.go_env&quot;</span> <span class="s">&lt;&lt;EOF</span>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-YmFzaA==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-YmFzaA==" name="YmFzaA==" role="tab" tabindex="0">bash</button></div><div aria-labelledby="tab-1-YmFzaA==" class="sphinx-tabs-panel group-tab" id="panel-1-YmFzaA==" name="YmFzaA==" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ cat &gt; <span class="s2">&quot;/usr/local/morty/.go_env&quot;</span> <span class="s">&lt;&lt;EOF</span>
 <span class="s">export GOPATH=/usr/local/morty/go-apps</span>
 <span class="s">export PATH=$PATH:/usr/local/morty/local/go/bin:$GOPATH/bin</span>
 <span class="s">EOF</span>
@@ -114,13 +114,13 @@ $ sudo -i -u <span class="s2">&quot;morty&quot;</span>
 <h2>Install morty<a class="headerlink" href="#install-morty" title="Permalink to this headline">¶</a></h2>
 <p>Install morty software and systemd unit:</p>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-2-YmFzaA==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-YmFzaA==" name="YmFzaA==" role="tab" tabindex="0">bash</button></div><div aria-labelledby="tab-2-YmFzaA==" class="sphinx-tabs-panel group-tab" id="panel-2-YmFzaA==" name="YmFzaA==" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo -i -u <span class="s2">&quot;morty&quot;</span>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-2-YmFzaA==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-2-YmFzaA==" name="YmFzaA==" role="tab" tabindex="0">bash</button></div><div aria-labelledby="tab-2-YmFzaA==" class="sphinx-tabs-panel group-tab" id="panel-2-YmFzaA==" name="YmFzaA==" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ sudo -i -u <span class="s2">&quot;morty&quot;</span>
 <span class="o">(</span>morty<span class="o">)</span> $ go get -v -u github.com/asciimoo/morty
 </pre></div>
 </div>
 </div></div>
 <div class="sphinx-tabs docutils container">
-<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-3-c3lzdGVtZA==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-3-c3lzdGVtZA==" name="c3lzdGVtZA==" role="tab" tabindex="0">systemd</button></div><div aria-labelledby="tab-3-c3lzdGVtZA==" class="sphinx-tabs-panel group-tab" id="panel-3-c3lzdGVtZA==" name="c3lzdGVtZA==" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>Unit<span class="o">]</span>
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-3-c3lzdGVtZA==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-3-c3lzdGVtZA==" name="c3lzdGVtZA==" role="tab" tabindex="0">systemd</button></div><div aria-labelledby="tab-3-c3lzdGVtZA==" class="sphinx-tabs-panel group-tab" id="panel-3-c3lzdGVtZA==" name="c3lzdGVtZA==" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>Unit<span class="o">]</span>
 
 <span class="nv">Description</span><span class="o">=</span>morty
 <span class="nv">After</span><span class="o">=</span>syslog.target
@@ -186,22 +186,22 @@ inspect service
 option
   set one of the available options
   :new-key:   set new morty key
-apache : http://fv-az240-745/morty/
+apache : http://fv-az139-284/morty/
   :install: apache site with a reverse proxy (ProxyPass)
   :remove:  apache site morty.conf
-nginx (http://fv-az240-745/morty/)
+nginx (http://fv-az139-284/morty/)
   :install: nginx site with a reverse proxy (ProxyPass)
   :remove:  nginx site morty.conf
 
 If needed, set the environment variables in the &#39;.config.sh&#39; file::
-  PUBLIC_URL_MORTY:     http://fv-az240-745/morty/
+  PUBLIC_URL_MORTY:     http://fv-az139-284/morty/
   MORTY_LISTEN:         127.0.0.1:3000
   SERVICE_USER:         morty
 
 To activate result and image proxy in searx, edit settings.yml (read:
 https://searx.github.io/searx/admin/morty.html)::
   result_proxy:
-      url : http://fv-az240-745/morty/
+      url : http://fv-az139-284/morty/
   server:
       image_proxy : True
 </pre></div>
@@ -264,7 +264,7 @@ https://searx.github.io/searx/admin/morty.html)::
   
     <div class="footer" role="contentinfo">
         &#169; Copyright 2015-2020, Adam Tauber, Noémi Ványi.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.1.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 3.5.2.
     </div>
   <script src="../_static/version_warning_offset.js"></script>
 
