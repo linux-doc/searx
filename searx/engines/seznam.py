@@ -3,9 +3,9 @@
  Seznam
 """
 
-from urllib.parse import urlencode, urlparse
+from urllib.parse import urlencode
 from lxml import html
-from searx.poolrequests import get
+from searx.network import get
 from searx.exceptions import SearxEngineAccessDeniedException
 from searx.utils import (
     extract_text,
@@ -46,22 +46,21 @@ def request(query, params):
 
 
 def response(resp):
-    resp_url = urlparse(resp.url)
-    if resp_url.path.startswith('/verify'):
+    if resp.url.path.startswith('/verify'):
         raise SearxEngineAccessDeniedException()
 
     results = []
 
     dom = html.fromstring(resp.content.decode())
     for result_element in eval_xpath_list(dom, '//div[@data-dot="results"]/div'):
-        result_data = eval_xpath_getindex(result_element, './/div[contains(@class, "Result")]', 0, default=None)
+        result_data = eval_xpath_getindex(result_element, './/div[contains(@class, "bec586")]', 0, default=None)
         if result_data is None:
             continue
         title_element = eval_xpath_getindex(result_element, './/h3/a', 0)
         results.append({
             'url': title_element.get('href'),
             'title': extract_text(title_element),
-            'content': extract_text(eval_xpath(result_data, './/p[@class="Result-description"]')),
+            'content': extract_text(eval_xpath(result_data, './/div[@class="_3eded7"]')),
         })
 
     return results
